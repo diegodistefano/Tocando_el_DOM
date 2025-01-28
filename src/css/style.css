@@ -7,3 +7,15 @@
 body {
     background-color: blue;
 }
+
+ul {
+    display: flex;
+}
+
+.nota {
+    background-color: azure;
+    border: solid black 2px;
+    border-radius: 0px 0px 10px 10px;
+    height: 250px;
+    width: 80px;
+}
