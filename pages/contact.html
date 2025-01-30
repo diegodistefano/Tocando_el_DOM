@@ -7,38 +7,65 @@
     <link rel="stylesheet" href="..\src\css\contact.css">
 </head>
 <body>
-    <script src="main.js"></script>
-    </script>
+    <!-- <script src="main.js"></script>
+    </script> -->
+<!-- 
+    <img src="./../public/img/guitarra.webp">  -->
+     
+    <!-- <h2>Contáctanos</h2> -->
 
-    <form>
-        
-        <label for="Nombre">Nombre</label>
-        <br>
-        <input type="text" id="nombre" name="nombre">
-        <br>
-        <br>
-        <label for="Apellidos">Apellidos</label>
-        <br>
-        <input type="text" id="Apellidos" name="Apellidos">
-        <br>
-        <br>
-        <label for="E-mail de Contacto">E-mail de Contacto</label>
-        <br>
-        <input type="text" id="E-mail de Contacto" name="E-mail de Contacto">
-        <br><br><br><br><br><br>
-        <label for="Instrumento">Instrumento</label>
-        <br>
-        <input type="text" id="Instrumento" name="Instrumentoo">
-        <br>
-        <br>
-        <label for="comentario">Comentario</label>
-        <br>
-        <textarea cols="30" rows="10" id="comentario" name="comentario"></textarea>
-        <br><br><br>
-        <button type="button" >Enviar</button>
+    <main>
+        <div class= "cont-h2">            
+            <h2>Contáctanos</h2>            
+        </div>                   
+            
+            <div class="contenedor-elementos-formulario">
 
+                <article>         
+                    <form>    
+                
+                        <label  for="Nombre">Nombre</label>
+                        <br>
+                        <input type="text" id="nombre" name="nombre">
+                        <br>
+                        <br>
+                        <label for="Apellidos">Apellidos</label>
+                        <br>
+                        <input type="text" id="Apellidos" name="Apellidos">
+                        <br>
+                        <br>
+                        <label for="E-mail de Contacto">E-mail de Contacto</label>
+                        <br>
+                        <input type="text" id="E-mail de Contacto" name="E-mail de Contacto">
+                        <br><br><br><br><br><br><br><br><br><br><br>
 
-    </form>
+                        <label for="Instrumentos">Instrumentos</label>
+                        <br>
+                            <select>
+                                <option value="piano">Piano</option>                         <option value="bateria">Batería</option>
+                             </select>
+                        
+                        <!-- <input type="text" id="Instrumentos" placeholder="selecciona una opcion" name="Instrumentos">                           -->
+                        <br>
+                        <br>
+                        <label for="comentario">Comentario</label>
+
+                        <br>
+
+                        <textarea cols="30" rows="10" id="comentario" name="comentario">
+                        </textarea>          
+
+                        <br><br><br>
+
+                        <button type="submit" >Enviar</button>
+
+                    </form>
+                </article>
+        </div>
+                
+
+    </main>
     
 </body>
 </html>
+

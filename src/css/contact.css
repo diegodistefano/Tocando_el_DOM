@@ -1,16 +1,72 @@
+    
+body {     
+    background-image: url("../../public/img/guitarra.webp"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+         
+}
 
-* {
+.cont-h2 {
+    color: White;
+    
+    height: 50px;
+    display: flex; 
+    justify-content: center; 
+    
+    
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    }
-
-body {
-    background-image: url("../../public/img/guitarra.webp");
-    /* background-color: black; */
+   
 }
 
-form {
-    background-image: url("../../public/img/guitarra.webp");
-
+.h2-contactanos {
+    display:flex;
+      
+    color: White;   
+    
 }
+
+.contenedor-elementos-formulario {
+    display: flex;   
+    flex-direction: column;
+    
+    /* position: fixed;  */
+    
+    background-color: #C4E0F9; 
+    width: 70%;
+    
+    margin: 70px;
+    padding: 40px; 
+    border-radius: 10px;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    opacity: 0.63;    
+}  
+
+.textos-formulario {
+    
+    
+}
+
+input, textarea {
+    background-color:  #FFFFFF;
+    padding: 10px;
+    border: 1px solid #ccc;      /* Borde gris claro */
+    border-radius: 5px;          /* Bordes redondeados en los inputs */
+    width: 100%;    
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;   /* Color de fondo azul */
+    color: white;                /* Color de texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;   /* Cambia el color del botón al pasar el mouse */
+}
+
+
