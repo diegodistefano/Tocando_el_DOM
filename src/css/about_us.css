@@ -162,9 +162,10 @@ footer hr {
     text-align: center;
 }
 
-.dropdown-list{
+.dropdown-list {
     display: none;
 }
+
 @media (min-width: 768px) {
     main img {
         width: 70%;
@@ -254,10 +255,10 @@ footer hr {
         opacity: 100%;
     }
 
-    .toogle .dropdown-list{
+    .toogle .dropdown-list {
         display: none;
     }
-    
+
     .toogle .dropdown-list-active {
         display: block;
         position: absolute;
