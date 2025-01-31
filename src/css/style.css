@@ -253,4 +253,8 @@ footer hr {
     .social-media {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .dropdown-click {
+        cursor: pointer;
+    }
 }
