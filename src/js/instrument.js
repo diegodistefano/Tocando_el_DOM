@@ -6,6 +6,14 @@ let sonidosArray_src = ["../public/sound/DO4.mp3", "../public/sound/REb4.mp3", "
 for (let i = 0; i < nota.length; i++) {
     nota[i].addEventListener('click', (e) => {  
         let sonido = new Audio(sonidosArray_src[i]);
+        let presion = nota[i];
+        presion.classList.add('presionada');
+        // usar settimeout
         sonido.play();
+        presion();
     });
+}
+
+document.unapresion = () => {
+    presion.classList.remove('presionada');
 }
