@@ -10,10 +10,8 @@ for (let i = 0; i < nota.length; i++) {
         presion.classList.add('presionada');
         // usar settimeout
         sonido.play();
-        presion();
+        setTimeout(() => {
+            presion.classList.remove('presionada');
+            }, 500);
     });
-}
-
-document.unapresion = () => {
-    presion.classList.remove('presionada');
 }
