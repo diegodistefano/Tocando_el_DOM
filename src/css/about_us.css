@@ -103,15 +103,15 @@ footer {
 .social-media {
     width: 65%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 2%;
+    grid-template-columns: repeat(4, 1fr);
     text-align: left;
     justify-content: center;
     grid-gap: 10%;
+    min-height: 100%;
 }
 
 .social-media img {
-    width: 10%;
+    width: 50%;
 }
 
 .logo-footer {
@@ -137,6 +137,7 @@ a {
     align-items: center;
     text-decoration: none;
     color: inherit;
+    justify-content: center;
 }
 
 .red img {
@@ -145,6 +146,10 @@ a {
 
 footer hr {
     margin: 3% 0;
+}
+
+.nombre-red {
+    display: none;
 }
 
 .toogle {
@@ -223,7 +228,7 @@ footer hr {
 
     .toogle {
         display: block;
-        width: 45%;
+        width: 50%;
     }
 
     .toogle ul {
@@ -289,5 +294,21 @@ footer hr {
     .nav-li:nth-child(2) {
         position: relative;
         display: inline-block;
+    }
+
+    .nombre-red {
+        display: block;
+    }
+
+    .red a {
+        justify-content: left;
+    }
+
+    .social-media img {
+        width: 10%;
+    }
+
+    .social-media {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
