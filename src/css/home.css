@@ -1,48 +1,51 @@
+*{
+    margin:0;
+}
+
+
 body {
     background-color: #FFF9E8; /* Define un color de fondo claro para toda la página */
-    display: flex; /* Usa flexbox para manejar la distribución de los elementos */
+    /* display: flex; Usa flexbox para manejar la distribución de los elementos */
     flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
     justify-content: center; /* Centra los elementos verticalmente dentro del contenedor */
-    align-items: center; /* Centra los elementos horizontalmente dentro del contenedor */
-    margin: 0; /* Elimina márgenes predeterminados del navegador */
-    padding: 0; /* Elimina el relleno predeterminado del navegador */
+    align-items: center; /*Centra los elementos horizontalmente dentro del contenedor */
+
+    
 }
 
+
+
+/* PORTADA WEB */
 .container-portada {
-    width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
-    /*max-width: 600px;  Limita el ancho del contenedor a 600px para mantener una apariencia consistente */
     position: relative; /* Permite posicionar elementos hijos de forma absoluta dentro del contenedor */
-    margin-bottom: 20px; /* Añade espacio entre el contenedor y el siguiente elemento */
+    max-width: 100%;
 }
-
-
-
 
 .foto-portada {
     width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción de la imagen */
     display: block; /* Elimina cualquier espacio inferior generado por la imagen en un flujo inline */
+    object-fit: cover;
 }
-
 
 .titulo-portada{
     position: absolute; /* Posiciona el texto de forma absoluta dentro de su contenedor padre */
-    top: 40%; /* Coloca el texto al 40% desde la parte superior del contenedor */
+    top: 50%; /* Coloca el texto al 40% desde la parte superior del contenedor */
     left: 50%; /* Coloca el texto al 50% desde la izquierda del contenedor */
     transform: translate(-50%, -50%); /* Ajusta el texto para que quede perfectamente centrado */
-    font-size: 18px; /* Define el tamaño de la fuente para el texto */
+    font-size: 30px; /* Define el tamaño de la fuente para el texto */
     color: white; /* Cambia el color del texto a blanco */
     font-weight: bold; /* Aplica negrita al texto */
     text-align: center; /* Centra el texto dentro de su línea */
 }
 
-
-.boton {
+.boton-portada {
     position: absolute; /* Posiciona el botón de forma absoluta dentro del contenedor padre */
-    top: 55%; /* Coloca el botón al 55% desde la parte superior del contenedor */
+    top: 58%; /* Coloca el botón al 55% desde la parte superior del contenedor */
     left: 50%; /* Coloca el botón al 50% desde la izquierda del contenedor */
     transform: translate(-50%, -50%); /* Ajusta el botón para que quede perfectamente centrado */
     padding: 5px 10px; /* Añade espacio interno al botón (5px arriba/abajo, 10px izquierda/derecha) */
-    font-size: 10px; /* Define el tamaño de la fuente del texto dentro del botón */
+    /*font-size: 10px;  Define el tamaño de la fuente del texto dentro del botón */
     background-color: #CA749C; /* Establece el color de fondo del botón */
     border: none; /* Elimina cualquier borde predeterminado del botón */
     opacity: 75%; /* Hace que el botón sea ligeramente translúcido */
@@ -54,46 +57,57 @@ body {
     background-color: #B95F89; /* Cambia el color del botón cuando el mouse pasa por encima */
 }
 
-.descripcion {
-    max-width: 600px; /* Limita el ancho del párrafo para mantener una buena legibilidad */
-    font-size: 12px; /* Establece el tamaño de la fuente del texto del párrafo */
-    line-height: 1.5; /* Define la altura de línea para mejorar la legibilidad del texto */
-    text-align: justify; /* Justifica el texto para alinear ambos lados del párrafo */
-    margin: 0 20px; /* Añade un margen de 20px a los lados izquierdo y derecho */
-    margin-left:50%;
-}
 
+
+/* CAROUSEL */
 .title{
     text-align: center;
+    padding: 15px;
+}
+.descripcion {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 2%;
+    max-width: 80%;
+    text-align: justify;
+    margin-left:4.5%;
 }
 
-/* 🔹 Reset global: Elimina márgenes y padding predeterminados y ajusta el modelo de caja */
-
-/* * {
+.nose {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} */
+}
 
 /* 🔹 Contenedor del carrusel */
+
+
 .carousel-container {
-    width: 34vmin; /* Tamaño proporcional a la ventana */
-    position: absolute; /* Permite posicionarlo libremente */
-    transform: translate(-125%, -120%); /* Lo centra en la pantalla */
-    top: 50%;
-    left: 50%;
-    overflow: hidden; /* Oculta las imágenes que salen del marco */
-    
+    width: 80%; /* cambio tamaño del carrusel */
+    /*height: 30vh;  Altura del carrusel */
+    display: flex; /* Flexbox para los elementos internos */
+    align-items: center; /* Centra los elementos dentro del carrusel */
+    margin: 5%; /* Espacio superior */
+    margin-left:6%;
+    overflow:hidden; /* Oculta cualquier contenido que se desborde */
 }
 
-/* 🔹 Contenedor de las imágenes */
-.wrapper {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    display: flex; /* Coloca las imágenes en línea horizontal */
-    animation: slide 16s infinite; /* Aplica la animación de desplazamiento */
+.img-wrapper {
+    display: flex; /* Flexbox para las imágenes */
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Altura completa del contenedor */
+    object-fit: cover; /*Ajusta imagen sin distorsionar */
+    
+    animation: slide 16s infinite; /* Animación continua */
 }
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 
 
 /* CARTAS APRENDER */
@@ -106,13 +120,13 @@ body {
 
 .container-aprender{
     display: flex; /* Organiza la tarjeta horizontalmente (imagen + texto) */
-    width: 48%; /* Establece que cada tarjeta ocupe el 48% del ancho del contenedor */
+    width: 90%; /* Establece que cada tarjeta ocupe el 48% del ancho del contenedor */
     border-radius: 10px; /* Bordes redondeados en toda la tarjeta */
     overflow: hidden; /* Evita que el contenido se salga de los bordes redondeados */
 }
 
 .img-aprender {
-    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    width: 250px; /* La imagen ocupa el 100% del ancho del contenedor */
     height: 200px; /* Ajusta la altura para pantallas pequeñas (en móvil) */
     background-size: cover; /* Hace que la imagen cubra completamente el contenedor */
     background-position: center; /* Centra la imagen dentro del contenedor */
@@ -120,61 +134,63 @@ body {
   }
 
 
-.txt{
-    /* flex: 1; Ocupa el 100% del espacio disponible en la tarjeta */
-    padding: 20px; /* Espaciado interno alrededor del texto */
+.txt-aprender{
+    flex: 1; /*  Ocupa el 100% del espacio disponible en la tarjeta */
+  
     display: flex; /* Utiliza Flexbox para organizar el contenido dentro de la sección */
     flex-direction: column; /* Organiza el contenido en una columna (arriba hacia abajo) */
     justify-content: center; /* Centra el contenido verticalmente */
     margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
-    max-width:50%;
     text-align: justify;
     font-size:25px;
+    padding:10px;
 }
 
-.boton-aprender{
-    padding: 10px;       /* Tamaño del botón */
-    background-color: #4CAF50; /* Color de fondo del botón */
+
+.boton-aprender-instrumentos{
+    padding: 10px; 
+    padding-left: 25px; 
+    padding-right: 25px;     /* Tamaño del botón */
+    background-color: #FAC72D; /* Color de fondo del botón */
     border: none; /* Elimina cualquier borde predeterminado del botón */
     opacity: 75%; /* Hace que el botón sea ligeramente translúcido */
-    border-radius: 5px; /* Redondea las esquinas del botón */
+    border-radius: 55px; /* Redondea las esquinas del botón */
     display: center; /* Hace que el botón ocupe solo el espacio del contenido (el texto) */
     text-align: center; /* Centra el texto dentro del botón */
+    margin-left:35%;
 }
 
-
-
-
-    
-    
-
-
-/* Mobile */
-@media screen and (max-width: 720px) {
-    h1 {
-      font-size: 35px; /* En pantallas de 1440px o menos */
+/* Media query para pantallas con más de 720px */
+@media screen and (min-width: 720px) {
+    .titulo-portada {
+        font-size: 30px; /* Aumenta el tamaño del título */
     }
-  }
+
+    .boton-portada {
+        font-size: 14px; /* Aumenta el tamaño del texto del botón */
+        padding: 8px 16px; /* Ajusta el tamaño del botón */
+    }
+}
+
+/* Media query para pantallas con 719px o menos */
+
   
 
-  /* Desktop */
-  @media screen and (min-width: 720px) {
-    h1 {
-      font-size: 10px; /* En pantallas de 440px o menos */
-    }
-  }
+
+
 /* 🔹 Animación del carrusel */
 @keyframes slide {
     0%, 25% {
         transform: translateX(0); /* Primera imagen */
     }
     30%, 50% {
-        transform: translateX(-150%); /* Segunda imagen */
+        transform: translateX(-100%); /* Segunda imagen */
     }
     55%, 75% {
-        transform: translateX(-300%); /* Tercera imagen */
+        transform: translateX(-200%); /* Tercera imagen */
     }
     80%, 100% {
-        transform: translateX(-450%); /* Cuarta imagen */
+        transform: translateX(-300%); /* Cuarta imagen */
     }
 }
+
