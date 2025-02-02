@@ -6,58 +6,67 @@ body {
          
 }
 
- 
+.mover-contactanos {
+
+    display: flex;
+    justify-content: center;
 
 
-.cont-h2 {
-    color: White;    
-    height: 50px;
-    display: flex; 
-    justify-content: center;    
-    margin: 0;
-    padding: 0;
-   
 }
 
-.h2-contactanos {
-    display:flex;      
-    color: White;   
-    
+h2 {
+    color: white;
+    /* justify-content: center; */
+    align-items: flex-end;
 }
 
 .contenedor-elementos-formulario {
     display: flex;   
-    flex-direction: column;   
-    /* align-items: center; */    
-    /* position: fixed;  */    
-    background-color: #C4E0F9; 
-    width: 80%;    
-    margin: 2%;
-    padding: 10%;  
+    flex-direction: column;         
+    align-items: center;
+       
+    background-color: #C4E0F9;         
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 5%;  
+    width: 60%;
     border-radius: 10px;         
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    opacity: 0.63;    
+    opacity: 0.83;    
 }  
 
-input, textarea {
-    background-color:  #FFFFFF;
+/* .elementos-formulario {
     display: flex;
-    margin-bottom: -20px;
+    justify-content: center;
+    padding: 80%;
+} */
+
+input, textarea{
+    /* background-color:  #FFFFFF; */
+    display: flex;    
+    margin-bottom: -20px;    
+    justify-content: center;
     
-    width: 90%; 
     padding: 5px;    
     border: 1px solid #ccc;      /* Borde gris claro */
-    border-radius: 5px;        
+    border-radius: 5px;       
        
 }
 
-.centrar-boton {
-     
-    margin: 80px;   
-    background-color: #9BBDF9;     
-    border: black;    
-    /* cursor: pointer; */   
+div {
+    display: flex;
+    justify-content: center;
 }
+.centrar-boton {
+       
+    display: flex;
+    justify-content: center; 
+    width: 30%;   
+    background-color: #9BBDF9; 
+    padding: 3%;
+       
+    /* cursor: pointer; */   
+} 
 
 button:hover {
     background-color: #2980b9;   /* Cambia el color del botón al pasar el mouse */
