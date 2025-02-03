@@ -2,16 +2,13 @@
 body {     
     background-image: url("../../public/img/guitarra.webp"); 
     background-size: cover;
-    background-repeat: no-repeat;
-         
+    background-repeat: no-repeat;         
 }
 
 .mover-contactanos {
 
     display: flex;
     justify-content: center;
-
-
 }
 
 h2 {
