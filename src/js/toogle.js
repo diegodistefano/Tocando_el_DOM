@@ -25,3 +25,4 @@ dropClick.addEventListener('click', function () {
         dropdown.classList.replace('fa-caret-up', 'fa-caret-down')
     }
 })
+console.log("a");
