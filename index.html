@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootcamp Rock</title>
+    <link rel="stylesheet" href="./../src/css/style.css">
     <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mako&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <!-- Portada -->
+    <!-- NAV -->
+    <nav class="shadow">
+        <div class="logo">
+            <a href="./../index.html"><img id="logo" src="./../public/img/bootcamp-logo.png"></a>
+        </div>
+        <div>
+            <img class="icon-toogle" src="./../public/img/toogle.svg">
+        </div>
+        <div class="toogle">
+            <ul class="menu">
+                <li class="nav-li"><a href="./../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    <hr>
+                </li>
+                <li class="nav-li dropdown-click"><i class="fa-solid fa-music"></i> Instrumentos <i
+                        class="dropdown fa-solid fa-caret-down"></i></a>
+                    <hr>
+                    <ul class="dropdown-list">
+                        <li><a href="./in_construction.html">Batería</a>
+                        </li>
+                        <li><a href="./in_construction.html">Flauta</a>
+                        </li>
+                        <li><a href="./instruments.html">Piano</a>
+                        </li>
+                        <li><a href="./in_construction.html">Guitarra</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="./in_construction.html">Batería</a>
+                </li>
+                <li class="submenu"><a href="./in_construction.html">Flauta</a>
+                </li>
+                <li class="submenu"><a href="./instruments.html">Piano</a>
+                </li>
+                <li class="submenu"><a href="./in_construction.html">Guitarra</a>
+
+                </li>
+                <li class="nav-li">
+                    <a href="./about_us.html"><i class="fa-solid fa-user"></i> Nosotros</a>
+                    <hr>
+                </li>
+                <li class="nav-li"><a href="./contact.html"><i class="fa-solid fa-phone"></i> Contacto</a>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Portada HOME -->
      <section>
         <div class="container-portada">
             <h1 class="titulo-portada">¿Te apasiona la música?</h1>  
@@ -15,6 +69,8 @@
             <button class="boton-portada">Quiero aprender</button>
         </div>
      </section>
+
+
     <!-- Bienvenida, carousel -->
     <section>
         <div>
@@ -28,8 +84,7 @@
                 </div>
             </div>
             
-            <p class="descripcion">Bienvenidos a nuestra escuela de música, donde el aprendizaje y la pasión por la música se unen. Ofrecemos un espacio para descubrir tu talento, perfeccionar tus habilidades y disfrutar del arte musical con el apoyo de profesores expertos. ¡Ven y deja que la música transforme tu vida!</p>
-            
+            <p class="descripcion">¡Bienvenidos a Bootcamp Rock!, donde el aprendizaje y la pasión por la música se unen. En nuestra escuela podrás descubrir un talento oculto para la música, perfeccionar tus habilidades y disfrutar del arte musical con el apoyo de los mejores profesionales y rodeado de otros apasionados del ritmo. ¿Comenzamos la aventura?</p>
         </div>
     </section>
     
@@ -41,7 +96,7 @@
             <div class="container-aprender">
                 <img src="./public/img/drums.jpg" class="img-aprender">
                 <div>
-                    <p class="txt-aprender">La batería es el motor del ritmo, un instrumento lleno de energía y expresión. Aprender a tocarla te conectará con la música de una manera única y emocionante.</p>
+                    <p class="txt-aprender">La batería es el latido del corazón de la música, un instrumento lleno de energía y expresión. Aprender a tocarla te conecta con la música de una forma única y vibrante.</p>
                     <button class="boton-aprender-instrumentos">Practicar</button>
                 </div>
             </div>
@@ -49,7 +104,7 @@
             <div class="container-aprender">
                 <img src="./public/img/flute.jpg" class="img-aprender">
                 <div>
-                    <p class="txt-aprender">La flauta es un instrumento elegante y melódico que te permite expresar emociones a través de su sonido dulce y envolvente. Aprender a tocarla es adentrarte en un mundo de armonía y sensibilidad.</p>
+                    <p class="txt-aprender">La flauta brinda la oportunidad de transmitir emociones con su sonido suave y cautivador. Con ella, te sumerges en un mundo de armonía y expresión.</p>
                     <button class="boton-aprender-instrumentos">Practicar</button>
                 </div>
             </div>
@@ -57,7 +112,7 @@
             <div class="container-aprender">
                 <img src="./public/img/guitarra.jpg" class="img-aprender">
                 <div>
-                    <p class="txt-aprender">La guitarra es un instrumento apasionante y versátil, ideal para acompañar canciones o crear melodías únicas. </p>
+                    <p class="txt-aprender">La guitarra está llena de posibilidades, es capaz de adaptarse a cualquier estilo musical. Con ella explorarás tu creatividad, a través de acordes y melodías </p>
                     <button class="boton-aprender-instrumentos">Practicar</button>
                 </div>
             </div>
@@ -65,14 +120,39 @@
             <div class="container-aprender">
                 <img src="./public/img/piano2.jpg" class="img-aprender">
                 <div>
-                    <p class="txt-aprender">El piano es un instrumento versátil y expresivo, perfecto para adentrarte en el mundo de la música. Aprender a tocarlo te permitirá explorar melodías, ritmos y emociones. </p>
+                    <p class="txt-aprender">El piano es un instrumento de teclado que combina armonía y melodía, creando suaves y delicadas notas o poderosas composiciones. ¿Te atreves a probarlo?</p>
                     <button class="boton-aprender-instrumentos">Practicar</button>
                 </div>
             </div>
 
         </div>
-    </section>  
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="shadow">
+        <div class="logo-footer">
+            <a href="./../index.html"><img id="logo" src="./../public/img/bootcamp-logo.png"></a>
+        </div>
+        <div class="social-media">
+            <div class="red"><a href="#"><img src="./../public/img/whatsapp-svgrepo-com.svg" alt="WhatsApp"> <span
+                        class="nombre-red">+34 123 456 789</span></a>
+            </div>
+            <div class="red"><a href="#"><img src="./../public/img/youtube-168-svgrepo-com.svg" alt="Youtube">
+                    <span class="nombre-red">bootcamprock</span></a></div>
+            <div class="red"><a href="#"><img src="./../public/img/mail-alt-3-svgrepo-com (1).svg" alt="Mail">
+                    <span class="nombre-red">bootcamprock@gmail.com</span></a></div>
+            <div class="red"><a href="#"><img src="./../public/img/instagram-svgrepo-com (1).svg" alt="Instagram">
+                    <span class="nombre-red">@bootcamprock</span></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <hr>
+            <p>Aviso Legal | Política de privacidad | Política de cookies | Gestionar datos</p>
+            <p>@2025 BootCamp Rock. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./../src/js/toogle.js"></script>  
     <script src="./src/js/carousel.js"></script>
-    <!-- <script src="./src/js/toogle.js"></script> -->
 </body>
 </html>
