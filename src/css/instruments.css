@@ -4,16 +4,23 @@
     box-sizing: border-box;
 }
 
+.container-piano{
+    display: flex;
+    justify-content: center;
+}
+
 .notas-piano {
     width: 80%;
     height: 100%;
     margin-top: 5%;
     display: flex;
     text-align: center;
+    justify-content: center;
 }
 
 ol {
     display: flex;
+    text-align: center;
     list-style-type: none;
 }
 
@@ -21,8 +28,8 @@ ol {
     background-color: azure;
     border: solid black 1px;
     border-radius: 0px 0px 5px 5px;
-    height: 140px;
-    width: 20px;
+    height: 200px;
+    width: 40px;
 }
 
 .nota-sos {
@@ -30,42 +37,13 @@ ol {
     background-color: rgb(45, 45, 45);
     border: solid black 1px;
     border-radius: 0px 0px 4px 4px;
-    height: 90px;
-    width: 16px;
-    margin-left: -8px;
+    height: 120px;
+    width: 28px;
+    margin-left: -14px;
 }
 
 .presionada {
     background-color: #77dd77;
-}
-
-@media only screen and (min-width: 720px) and (max-width: 1365px)  {
-    .nota {
-        height: 350px;
-        width: 75px;
-    }   
-    .nota-sos {
-        height: 180px;
-        width: 40px;
-        margin-left: -20px;
-    }
-}
-
-@media (min-width: 1366px) {
-    .notas-piano {
-        margin: 0.5vh;
-    }
-    .nota {
-        height: 550px;
-        width: 100px;
-        border: solid black 2px;
-    }   
-    .nota-sos {
-        height: 300px;
-        width: 60px;
-        margin-left: -30px;
-        border: solid black 2px;
-    }
 }
 
 .mako-regular {
@@ -219,6 +197,53 @@ footer hr {
 
 .dropdown-list {
     display: none;
+}
+
+@media screen and (max-width: 719px) and (orientation: portrait) {
+    .nota{
+        background-color: rgba(172, 172, 197, 0.596);
+        border: #9BBDF9;
+    }
+    .container-piano {
+        flex-wrap: wrap;
+    }
+    .container-piano::before {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        content: "Voltee su dispositivo a posición horizontal para utilizar el piano.";
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1365px)  {
+    .nota {
+        height: 350px;
+        width: 75px;
+    }   
+    .nota-sos {
+        height: 180px;
+        width: 40px;
+        margin-left: -20px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .notas-piano {
+        margin: 0.5vh;
+    }
+    .nota {
+        height: 550px;
+        width: 100px;
+        border: solid black 2px;
+    }   
+    .nota-sos {
+        height: 300px;
+        width: 60px;
+        margin-left: -30px;
+        border: solid black 2px;
+    }
 }
 
 @media (min-width: 720px) {
