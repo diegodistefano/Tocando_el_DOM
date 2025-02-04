@@ -9,6 +9,7 @@ body {
 
     display: flex;
     justify-content: center;
+    margin-top: 2%;
 }
 
 h2 {
@@ -67,6 +68,12 @@ div {
 
 button:hover {
     background-color: #2980b9;   /* Cambia el color del botón al pasar el mouse */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0; 
 }
 
 
