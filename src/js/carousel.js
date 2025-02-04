@@ -4,7 +4,15 @@ function automaticSlide() {
     setTimeout(automaticSlide, 2000); // Llama a la función cada 2 segundos para crear el efecto de carrusel automático.
 
     var pics; // Variable usada como contador en el bucle.
-    const img = document.querySelectorAll('img'); // Selecciona todas las etiquetas <img> en la página.
+    // const img = document.querySelectorAll('img');
+    const img = [
+        document.querySelector('#imagen1'),
+        document.querySelector('#imagen2'),
+        document.querySelector('#imagen3'),
+        document.querySelector('#imagen4'),
+    ];
+
+    // Selecciona todas las etiquetas <img> en la página.
 
     // Bucle para ocultar todas las imágenes
     for (pics = 0; pics < img.length; pics++) { 
