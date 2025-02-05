@@ -4,9 +4,27 @@
     box-sizing: border-box;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.div-container-titulo {
+    padding: 2rem 2rem 0rem 2rem;
+    font-size: 25px;
+}
+
+.div-container-titulo h2 {
+    font-size: 50px;
+    margin: 1rem 0rem;
+}
+
 .container-piano{
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .notas-piano {
@@ -206,6 +224,7 @@ footer hr {
     }
     .container-piano {
         flex-wrap: wrap;
+        /* margin: 1rem; */
     }
     .container-piano::before {
         margin-top: 40px;
@@ -247,6 +266,10 @@ footer hr {
 }
 
 @media (min-width: 720px) {
+
+    .div-container-titulo {
+        padding: 2rem 2rem 2rem 2rem;
+    }
 
     /* nav desktop */
     nav {
