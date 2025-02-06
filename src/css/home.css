@@ -5,7 +5,6 @@
 
 body {
     background-color: #FFF9E8; /* Define un color de fondo claro para toda la página */
-    /* display: flex; Usa flexbox para manejar la distribución de los elementos */
     flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
     justify-content: center; /* Centra los elementos verticalmente dentro del contenedor */
     align-items: center; /*Centra los elementos horizontalmente dentro del contenedor */
@@ -30,7 +29,7 @@ main{
     text-align: center;
     align-items: center;
     background-image: url("./../../public/img/piano-portada.jpg");
-    /* height: 200px; */
+    
 }
 
 .pic-portada {
@@ -41,11 +40,6 @@ main{
 } 
 
 .title-portada{
-    /*position: absolute; /* Posiciona el texto de forma absoluta dentro de su contenedor padre */
-    /*top: 50%; /* Coloca el texto al 40% desde la parte superior del contenedor */
-    /*left: 50%; /* Coloca el texto al 50% desde la izquierda del contenedor */
-    /*transform: translate(-50%, -50%); /* Ajusta el texto para que quede perfectamente centrado */
-    /*font-size: 30px; /* Define el tamaño de la fuente para el texto */
     color: white; /* Cambia el color del texto a blanco */
     font-weight: bold; /* Aplica negrita al texto */
     text-align: center; /* Centra el texto dentro de su línea */
@@ -55,19 +49,14 @@ main{
 }
 
 .button-portada {
-   /* position: absolute;  Posiciona el botón de forma absoluta dentro del contenedor padre */
-    /*top: 58%; /* Coloca el botón al 55% desde la parte superior del contenedor */
-    /*left: 50%; /* Coloca el botón al 50% desde la izquierda del contenedor */
-    /*transform: translate(-50%, -50%); /* Ajusta el botón para que quede perfectamente centrado */
-    /*padding: 5px 10px; /* Añade espacio interno al botón (5px arriba/abajo, 10px izquierda/derecha) */
-    /*font-size: 10px;  Define el tamaño de la fuente del texto dentro del botón */
-    background-color: #CA749C; /* Establece el color de fondo del botón */
-    border: none; /* Elimina cualquier borde predeterminado del botón */
-    opacity: 75%; /* Hace que el botón sea ligeramente translúcido */
-    border-radius: 5px; /* Redondea las esquinas del botón */
-    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
-    width: 15%
-}
+    
+     background-color: #CA749C; /* Establece el color de fondo del botón */
+     border: none; /* Elimina cualquier borde predeterminado del botón */
+     opacity: 75%; /* Hace que el botón sea ligeramente translúcido */
+     border-radius: 5px; /* Redondea las esquinas del botón */
+     cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+     padding: 1% 2% 1% 2%;
+ }
 
 .boton:hover {
     background-color: #B95F89; /* Cambia el color del botón cuando el mouse pasa por encima */
@@ -105,18 +94,13 @@ main{
 
 .carousel-container {
     width: 80%; /* cambio tamaño del carrusel */
-    /* width: 80%; cambio tamaño del carrusel */
-    /*height: 30vh;  Altura del carrusel */
     display: flex; /* Flexbox para los elementos internos */
     align-items: center; /* Centra los elementos dentro del carrusel */
     margin-left: 10%;
-    /* margin-left:6%; */
     overflow:hidden; /* Oculta cualquier contenido que se desborde */
 }
 .img-wrapper {
     display: flex; /* Flexbox para las imágenes */
-    /* width: 100%; Ancho completo del contenedor */
-    /* height: 100%; /* Altura completa del contenedor */
     object-fit: cover; /*Ajusta imagen sin distorsionar */
     animation: slide 16s infinite; /* Animación continua */
 }
@@ -157,12 +141,6 @@ main{
 
 
 .txt-aprender{
-    /*flex: 1; /*  Ocupa el 100% del espacio disponible en la tarjeta */
-   /* display: flex; /* Utiliza Flexbox para organizar el contenido dentro de la sección */
-    /*flex-direction: column;  Organiza el contenido en una columna (arriba hacia abajo) */
-    /*justify-content: center; Centra el contenido verticalmente*/
-    /*margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
-    /* text-align: justify; */
     font-size:23px;
     padding:10px;
     line-height: 1.1;
@@ -170,7 +148,6 @@ main{
 
 #carousel{
     display: grid;
-    /*grid-template-columns: repeat(2, 1fr);  Dos columnas */
     gap: 10px;
 }
 
@@ -181,7 +158,7 @@ main{
     background-color: #FAC72D; /* Color de fondo del botón */
     border: none; /* Elimina cualquier borde predeterminado del botón */
     opacity: 75%; /* Hace que el botón sea ligeramente translúcido */
-    border-radius: 55px; /* Redondea las esquinas del botón */
+    border-radius: 95px; /* Redondea las esquinas del botón */
     display: center; /* Hace que el botón ocupe solo el espacio del contenido (el texto) */
     /*text-align: center;  Centra el texto dentro del botón */
     margin-left:35%;
@@ -209,11 +186,6 @@ main{
     }
 
     .carousel-container{
-        /*width: 40%;
-         display: flex;
-        align-items: center;
-        justify-content: center; */
-        /*gap: 20px;  Espacio entre imagen y texto */
         margin-left: 15%;
     }
 
@@ -240,7 +212,6 @@ main{
    #carousel{
       /* Espacio entre la imagen y el texto */
     grid-template-columns: 1fr 1fr; 
-    
    }
 
 }
