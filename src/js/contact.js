@@ -1,3 +1,4 @@
+//Evento Campo Nombre de Formulario. Recordar al usuario de rellenar el campo
 const nombreInput = document.getElementById("nombre");
 const mensajeNombre = document.getElementById("mensaje-nombre");
 
