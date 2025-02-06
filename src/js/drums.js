@@ -44,11 +44,11 @@ document.addEventListener("click", function (e) {
     if (drums_pieces[e.target.id] == undefined) {
         return;
     } else {
-        e.target.classList.toggle("oscuro");
+        e.target.classList.toggle("dark");
         let audio = new Audio("./../../public/sound/drums/" + drums_pieces[e.target.id].audio);
         audio.play();
         setTimeout(() => {
-            e.target.classList.toggle("oscuro");
+            e.target.classList.toggle("dark");
         }, 300);
     }
 

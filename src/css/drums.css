@@ -106,7 +106,6 @@ section {
     margin-bottom: -50%;
 }
 
-.oscuro {
+.dark {
     filter: brightness(50%);
-    /* Reduce el brillo al 50% */
 }
