@@ -70,26 +70,28 @@
                 <form>    
                     
                     <label  for="nombre">Nombre</label>
-                    <br>
-                    <input type="text" id="nombre" name="nombre">
+                    <!-- <br> -->
+                    <input id="nombre" type="text" name="nombre"/>
+                    <small id="mensaje-nombre" style="color: blue; font-weight: bold; display: none;"></small> <!-- Mensaje informativo --> <!-- Mensaje de error -->
                     <br>
                     <br>
                     <label for="apellidos">Apellidos</label>
                     <br>
-                    <input type="text" id="apellidos" name="apellidos">
+                    <input id="apellidos" type="text" name="apellidos"/>
                     <br>
                     <br>
                     
-                    <label for="e-mail de Contacto">E-mail de Contacto</label>                   
+                    <label for="e-mail-contacto">E-mail de Contacto</label>             <small id="mensaje-email" style="color: blue; font-weight: bold; display: none;"></small> <!-- Mensaje de error arriba -->      
                     
-                    <input type="text" id="e-mail de Contacto" name="e-mail de Contacto">
+                    <input type="e-mail"  name="e-mail-contacto"/>
                     <br><br>
                     
-                    <label for= "telefono">Teléfono</label>
-                    <br>
+                    <label for="telefono">Teléfono</label>             <br>
                     
-                    <input type="text" id= "telefono" name="telefono">
+                    <input type="text" id="telefono" name="telefono" maxlength="9"/>
                     
+                    <small id="mensaje-info" style="color: blue; font-weight: bold; display: none;"></small> <!-- Mensaje informativo -->
+                    <small id="mensaje-error" style="color: red; display: none;"></small> <!-- Mensaje de error -->
                     
                     <br><br>
     
@@ -109,14 +111,14 @@
     
                     <br>
     
-                    <textarea class="comentarios" cols="30" rows="10" id="comentario" name="comentario">
+                    <textarea class="comentarios" cols="30" rows="10" id="comentarios" name="comentarios">
                     </textarea>          
     
                     <br><br>
     
                     <div class="centrar-boton">
                          <button class="fondo-boton">Enviar</button>
-                 </div>
+                    </div>
     
                 </form>
                     
@@ -151,6 +153,7 @@
     </footer>
 
     <script src="./../src/js/toogle.js"></script>
+    <script src="./../src/js/contact.js"></script> <!-- Validar el Formulario -->
     
 </body>
 
