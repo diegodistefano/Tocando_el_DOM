@@ -1,0 +1,94 @@
+body {
+  background-image: url("../../public/img/guitarra.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mover-contactanos {
+  display: flex;
+  justify-content: center;
+  
+}
+
+main {
+  margin-top: 8%;
+}
+h1 {
+  color: rgb(247, 246, 246);  
+  align-items: center;
+}
+
+form {
+  width: 100%;
+
+}
+
+
+.contenedor-elementos-formulario {
+  display: flex;
+  flex-direction: column; 
+
+  align-items: center;
+  background-color: #c4e0f9;
+  margin-top: 5%;
+  margin-right: 20%;
+  margin-left: 20%;
+  padding: 5%;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.83;
+}
+
+
+
+input, textarea, select  {
+  display: flex;
+  margin-bottom: -20px;    
+  justify-content: center;
+  width: 100%;
+  padding: 2%;
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px;   
+  
+}
+
+
+
+
+.centrar-boton {
+  display: flex;
+  justify-content: center;
+
+  padding: 3%;
+}
+
+.fondo.boton {
+  background-color: #2730dd;
+}
+
+/* cursor: pointer; */ /* Cambia el color del botón al pasar el mouse */
+
+button:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 720px) {
+  footer {
+    position: relative;
+    /* bottom: 0;
+        margin-bottom: 0;  */
+  }
+  .contenedor-elementos-formulario {
+    margin-bottom: 10%;
+    padding: 10%;     
+    
+  }
+  
+}
