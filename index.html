@@ -3,20 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootcamp Rock</title>
+    <link rel="stylesheet" href="./../src/css/style.css">
     <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mako&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./public/img/bootcamp-logo.png" type="image/png"> 
+
+
 </head>
 <body>
-    <div class="container">
-        <h2 class="texto">¿Te apasiona la música?</h2>  
-        <img src="./public/img/piano-portada.jpg" class="foto-portada" >
-        <button class="boton">Quiero aprender</button>
-    </div>
+    <!-- NAV -->
+    <nav class="shadow">
+        <div class="logo">
+            <a href="./../index.html"><img id="logo" src="./../public/img/bootcamp-logo.png"></a>
+        </div>
+        <div>
+            <img class="icon-toogle" src="./../public/img/toogle.svg">
+        </div>
+        <div class="toogle">
+            <ul class="menu">
+                <li class="nav-li"><a href="./../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    <hr>
+                </li>
+                <li class="nav-li dropdown-click"><i class="fa-solid fa-music"></i> Instrumentos <i
+                        class="dropdown fa-solid fa-caret-down"></i></a>
+                    <hr>
+                    <ul class="dropdown-list">
+                        <li><a href="./in_construction.html">Batería</a>
+                        </li>
+                        <li><a href="./in_construction.html">Flauta</a>
+                        </li>
+                        <li><a href="./instruments.html">Piano</a>
+                        </li>
+                        <li><a href="./in_construction.html">Guitarra</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="./in_construction.html">Batería</a>
+                </li>
+                <li class="submenu"><a href="./in_construction.html">Flauta</a>
+                </li>
+                <li class="submenu"><a href="./instruments.html">Piano</a>
+                </li>
+                <li class="submenu"><a href="./in_construction.html">Guitarra</a>
+
+                </li>
+                <li class="nav-li">
+                    <a href="./about_us.html"><i class="fa-solid fa-user"></i> Nosotros</a>
+                    <hr>
+                </li>
+                <li class="nav-li"><a href="./contact.html"><i class="fa-solid fa-phone"></i> Contacto</a>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Portada HOME -->
+        <section class="container-portada">
+            <h1 class="title-portada">¿Te apasiona la música?</h1>  
+            <a href="./pages/instruments.html" >
+                <button class="button-portada">Quiero aprender</button>
+            </a>
+        </section>
+     
+    <!-- Carousel -->
+        <section>
+            <h2 class="title-carousel">🤘Bootcamp Rock🤘</h2>
+            <div id="carousel">
+                <div class="carousel-container">
+                    <div class="img-wrapper">
+                        <img id="imagen1" src="./public/img/carousel1.jpg" alt="imagen1 del carousel de una niña aprendiendo a tocar el piano con su profesora">
+                        <img id="imagen2" src="./public/img/carousel2.jpg" alt="imagen2 del carousel con varios niños practicando sus instrumentos con su profesora">
+                        <img id="imagen3"src="./public/img/carousel3.jpg" alt="imagen3 del carousel de unos varios instrumentos colocados en un escenario">
+                        <img id="imagen4" src="./public/img/carousel4.jpg" alt="imagen4 del carousel de las teclas de un piano con un partitura">
+                    </div>
+                </div>
+                <p class="description-carousel">¡Bienvenidos a Bootcamp Rock!, donde el aprendizaje y la pasión por la música se unen. En nuestra escuela podrás descubrir un talento oculto para la música, perfeccionar tus habilidades y disfrutar del arte musical con el apoyo de los mejores profesionales y rodeado de otros apasionados del ritmo. ¿Comenzamos la aventura?🚀</p>
+            </div>
+        </section>
     
+     
+    <!-- ¿Qué podrás aprender? -->
+        <section>
+            <h2 class="title-carousel">¿Qué podrás aprender? </h2>
+            <div class="aprender">
+
+                <!-- bateria-card -->
+                <div class="container-aprender">
+                    <img src="./public/img/drums.jpg" class="img-aprender" alt="imagen de una bateria en la calle">
+                    <div>
+                        <p class="txt-aprender">🥁La batería es el latido del corazón de la música, un instrumento lleno de energía y expresión. Aprender a tocarla te conecta con la música de una forma única y vibrante.</p>
+                        <a href="./pages/instruments.html">
+                            <button  class="boton-aprender-instrumentos">Practicar <button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- flauta-card -->
+                <div class="container-aprender">
+                    <img src="./public/img/flute.jpg" class="img-aprender" alt="imagen de las manos de una persona tocando la flauta dulce">
+                    <div>
+                        <p class="txt-aprender">🪈La flauta brinda la oportunidad de transmitir emociones con su sonido suave y cautivador. Con ella, te sumerges en un mundo de armonía y expresión.</p>
+                        <a href="./pages/in_construction.html">
+                            <button class="boton-aprender-instrumentos">Practicar</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- guitarra-card -->
+                <div class="container-aprender">
+                    <img src="./public/img/guitarra.jpg" class="img-aprender" alt="imagen de una guitarra en un prado">
+                    <div>
+                        <p class="txt-aprender">🎸La guitarra está llena de posibilidades, es capaz de adaptarse a cualquier estilo musical. Con ella explorarás tu creatividad, a través de acordes y melodías. </p>
+                        <a href="./pages/in_construction.html">
+                            <button class="boton-aprender-instrumentos">Practicar</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- piano-card -->
+                <div class="container-aprender">
+                    <img src="./public/img/piano2.jpg" class="img-aprender" alt="imagen de un piano">
+                    <div>
+                        <p class="txt-aprender">🎹El piano es un instrumento de teclado que combina armonía y melodía, creando suaves y delicadas notas o poderosas composiciones. ¿Te atreves a probarlo?</p>
+                        <a href="./pages/instruments.html">
+                            <button class="boton-aprender-instrumentos">Practicar</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
     
-    
-    
-   
+
+    <!-- FOOTER -->
+    <footer class="shadow">
+        <div class="logo-footer">
+            <a href="./../index.html"><img id="logo" src="./../public/img/bootcamp-logo.png"></a>
+        </div>
+        <div class="social-media">
+            <div class="red"><a href="#"><img src="./../public/img/whatsapp-svgrepo-com.svg" alt="WhatsApp"> <span
+                        class="nombre-red">+34 123 456 789</span></a>
+            </div>
+            <div class="red"><a href="#"><img src="./../public/img/youtube-168-svgrepo-com.svg" alt="Youtube">
+                    <span class="nombre-red">bootcamprock</span></a></div>
+            <div class="red"><a href="#"><img src="./../public/img/mail-alt-3-svgrepo-com (1).svg" alt="Mail">
+                    <span class="nombre-red">bootcamprock@gmail.com</span></a></div>
+            <div class="red"><a href="#"><img src="./../public/img/instagram-svgrepo-com (1).svg" alt="Instagram">
+                    <span class="nombre-red">@bootcamprock</span></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <hr>
+            <p>Aviso Legal | Política de privacidad | Política de cookies | Gestionar datos</p>
+            <p>@2025 BootCamp Rock. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS .JS -->
+    <script src="./../src/js/toogle.js"></script>  
+    <script src="./src/js/carousel.js"></script>
     
 </body>
 </html>
