@@ -13,11 +13,21 @@
 ## 🛠️ Tecnologías utilizadas  
 
 Para dar vida a esta increíble experiencia, usamos:  
-- 🎨 **Figma** → Para diseñar la interfaz más rockera 
-- 🌐 **HTML, CSS** → Para estructurar y estilizar la plataforma 
-- ⚡ **JavaScript** → Para hacer que todo cobre vida de manera interactiva 
 
----
+
+
+
+
+
+<img height="50" src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png"> → Para diseñar la interfaz más rockera </br>
+<img height="50" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"><img height="50" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"> → Para estructurar y estilizar la plataforma  </br>
+<img height="50" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"> → Para hacer que todo cobre vida de manera interactiva  </br>
+
+<img height="50" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png"> → El entorno de desarrollo más amigable </br>
+<img height="50" src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"><img height="50" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png">  → Para ordenar todo el trabajo en equipo (lo más importante)  </br>
+
+___
+
 
 ## 🎬 Vista previa  
 
@@ -37,11 +47,10 @@ Aquí tienes una pequeña muestra de lo que encontrarás en Bootcamp Rock:
 
 1. 📥 Clona el repositorio:  
    ```bash
-   git clone https://github.com/tu-usuario/bootcamp-rock.git
-   ```
+   git clone [https://github.com/diegodistefano/Tocando_el_DOM.git]
 2. 📂 Entra en la carpeta del proyecto:  
    ```bash
-   cd bootcamp-rock
+   cd Tocando_el_DOM
    ```
 3. 🚀 Abre el archivo `index.html` en tu navegador favorito y ¡a rockear! 🎶
 
@@ -61,7 +70,7 @@ Este proyecto fue desarrollado con mucho ritmo por:
 
 ## 📜 Licencia  
 
-Este proyecto está bajo la licencia **MIT**. ¡Úsalo, mejóralo y comparte el rock! 🎵  
+Este proyecto está bajo la licencia **ROBE TRANQUIL@**. ¡Úsalo, mejóralo y comparte el rock! 🎵  
 
 ---
 
