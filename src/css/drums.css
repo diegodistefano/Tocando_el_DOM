@@ -1,0 +1,136 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    padding: 2%;
+}
+
+.drums-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+        "crash1 splash ride china crash2"
+        "kick1 tom1 tom2 tom3 kick2"
+        "hihat hihat blank snare snare"
+        "hihat hihat sticks snare snare";
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+    padding: 2%;
+    max-width: 1000px;
+    border-radius: 10px;
+    background-color: #333a42;
+    cursor: url("https://cdn.custom-cursor.com/db/cursor/32/drumstick_and_drum_cursor.png"), default;
+}
+
+/* Primera linea */
+.drums-crash_1 {
+    grid-area: crash1;
+}
+
+.drums-splash {
+    grid-area: splash;
+}
+
+.drums-ride {
+    grid-area: ride;
+}
+
+.drums-china {
+    grid-area: china;
+}
+
+.drums-crash_2 {
+    grid-area: crash2;
+}
+
+/* Segunda Linea */
+
+.drums-kick_1 {
+    grid-area: kick1;
+}
+
+.drums-tom1 {
+    grid-area: tom1;
+}
+
+.drums-tom2 {
+    grid-area: tom2;
+}
+
+.drums-tom3 {
+    grid-area: tom3;
+}
+
+.drums-kick_2 {
+    grid-area: kick2;
+}
+
+/* Tercera Linea */
+
+.drums-hihat {
+    grid-area: hihat;
+}
+
+.drums-blank {
+    grid-area: blank;
+}
+
+.drums-snare {
+    grid-area: snare;
+}
+
+.drums-sticks {
+    grid-area: sticks;
+}
+
+.drums-piece img {
+    width: 100%;
+    height: auto;
+
+}
+
+.drums-kick {
+    margin-bottom: -40%;
+}
+
+.drums-crash {
+    margin-bottom: -50%;
+}
+
+.dark {
+    filter: brightness(50%);
+}
+
+/* Acordeon */
+.accordion {
+    background-color: #FFF1CA;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #9BBDF9; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }

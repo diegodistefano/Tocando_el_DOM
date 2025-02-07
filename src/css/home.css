@@ -1,0 +1,186 @@
+*{
+    margin:0; /* Elimina el margen predeterminado de todos los elementos */
+}
+
+body {
+    background-color: #FFF9E8; /* Establece el color de fondo de la página */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+main{
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-direction: column; /* Alinea los elementos de forma vertical */
+}
+
+/* PORTADA WEB */
+.container-portada {
+    min-height: 40vh; /* Altura mínima de la portada */
+    background-size: cover; /* Hace que la imagen cubra el contenedor sin distorsionarse */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-image: url("./../../public/img/piano-portada.jpg"); /* Imagen de fondo */
+}
+
+.title-portada{
+    color: white; /* Establece el color del texto */
+    font-weight: bold; /* Aplica negrita al texto */
+    text-align: center; /* Centra el texto */
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    align-items: center; /* Centra los elementos dentro del contenedor */
+    padding: 0% 0% 2% 0%; /* Añade un poco de espacio en la parte inferior */
+}
+
+.button-portada {
+    background-color: #CA749C; /* Establece el color de fondo del botón */
+    border: none; /* Elimina los bordes del botón */
+    opacity: 75%; /* Hace el botón ligeramente translúcido */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+    padding: 2%; /* Añade espacio dentro del botón */
+    font-size:10px;
+}
+
+.button-portada:hover {
+    background-color: #B95F89; /* Cambia el color de fondo del botón cuando pasa el mouse */
+}
+
+/* CAROUSEL */
+.title-carousel{
+    text-align: center; /* Centra el texto */
+    padding: 5% 5% 0% 5%; /* Añade espacio alrededor del título */
+    font-size:35px; /* Establece el tamaño de la fuente */
+}
+
+.description-carousel {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    font-size: 20px; /* Establece el tamaño de la fuente */
+    padding: 2%; /* Añade espacio alrededor */
+    max-width: 88%; /* Limita el ancho máximo */
+    text-align: justify; /* Justifica el texto */
+    margin-left: 6%; /* Añade un margen izquierdo */
+}
+
+.carousel-container {
+    width: 80%; /* Establece el ancho del contenedor */
+    display: flex; /* Usa flexbox para organizar los elementos */
+    align-items: center; /* Centra los elementos dentro del contenedor */
+    margin-left: 10%; /* Añade un margen izquierdo */
+    overflow:hidden; /* Oculta el contenido que se desborda */
+}
+
+.img-wrapper {
+    display: flex; /* Usa flexbox para organizar las imágenes */
+    object-fit: cover; /* Ajusta las imágenes sin distorsionarlas */
+    animation: slide 16s infinite; /* Añade una animación continua */
+}
+
+.img-wrapper img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+    height: 100%; /* Hace que la imagen ocupe toda la altura */
+    object-fit: contain; /* Ajusta la imagen para que se contenga dentro del área sin perder proporciones */
+}
+
+/* CARTAS APRENDER */
+.aprender{
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea cuando no hay espacio */
+    gap: 30px; /* Añade espacio entre los elementos */
+    padding: 3% 3% 10% 3%; /* Añade espacio alrededor del contenedor */
+}
+
+.container-aprender{
+    display: flex; /* Usa flexbox para organizar la tarjeta */
+    width: 90%; /* Establece el ancho de la tarjeta */
+    border-radius: 10px; /* Redondea las esquinas */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+.img-aprender {
+    width: 50%; /* Establece el ancho de la imagen */
+    object-fit: cover; /* Hace que la imagen cubra el contenedor */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    border-radius: 10px 0px 0px 10px; /* Redondea las esquinas de la imagen */
+}
+
+.txt-aprender{
+    font-size:23px; /* Establece el tamaño de la fuente */
+    padding:10px; /* Añade espacio dentro del contenedor */
+    line-height: 1.1; /* Establece la altura de línea */
+}
+
+#carousel{
+    display: grid; /* Usa un sistema de cuadrícula */
+    gap: 10px; /* Añade espacio entre los elementos */
+}
+
+.boton-aprender-instrumentos{
+    padding: 10px; /* Añade espacio dentro del botón */
+    padding-left: 30px; /* Añade espacio a la izquierda */
+    padding-right: 30px; /* Añade espacio a la derecha */
+    background-color: #FAC72D; /* Establece el color de fondo del botón */
+    border: none; /* Elimina los bordes */
+    opacity: 75%; /* Hace el botón ligeramente translúcido */
+    border-radius: 95px; /* Redondea las esquinas */
+    display: center; /* Centra el contenido dentro del botón */
+    margin-left:35%; /* Añade margen a la izquierda */
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+/* Media query para pantallas con más de 720px */
+@media screen and (min-width: 720px) {
+    .title-portada {
+        font-size: 40px; /* Aumenta el tamaño de la fuente del título */
+    }
+
+    .button-portada {
+        font-size: 20px; /* Aumenta el tamaño de la fuente del botón */
+        margin-top: 1%; /* Añade margen en la parte superior */
+        padding: 10px 20px; /* Añade espacio dentro del botón */
+    }
+
+    .title-carousel{
+        font-size: 45px; /* Aumenta el tamaño de la fuente del título */
+        padding-bottom: 15px; /* Añade espacio en la parte inferior */
+    }
+    
+    .description-carousel{
+        font-size:22px; /* Aumenta el tamaño de la fuente */
+    }
+
+    .carousel-container{
+        margin-left: 15%; /* Añade margen a la izquierda */
+    }
+
+    .container-portada{
+        min-height: 100vh; /* Establece una altura mínima del 100% de la pantalla */
+    }
+
+    .img-aprender{
+        width:200px; /* Ajusta el ancho de la imagen */
+        height: 150px; /* Ajusta la altura de la imagen */
+    }
+
+    .txt-aprender{
+        font-size: 17px; /* Reduce el tamaño de la fuente */
+    }
+
+    .aprender{
+        display: grid; /* Usa una cuadrícula para organizar las tarjetas */
+        grid-template-columns: repeat(2, 1fr); /* Crea dos columnas en la cuadrícula */
+        gap: 50px; /* Añade espacio entre las tarjetas */
+    }
+
+   #carousel{
+    grid-template-columns: 1fr 1fr; /* Establece dos columnas para el carrusel */
+   }
+}
