@@ -1,15 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #FFF9E8;
-    min-height: 100vh;
-    font-family: 'Mako', sans-serif;
-}
-
 main {
     min-height: 48vh;
     display: flex;
@@ -19,53 +7,12 @@ main {
     text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'EB Garamond', serif;
-}
-
-nav {
-    display: flex;
-    background-color: #9BBDF9;
-    color: white;
-    padding: 5%;
-    justify-content: space-between;
-    height: 5%;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 90%;
-}
-
-.logo img {
-    width: 10%;
-}
-
-.nav-li {
-    background-color: #5a88d8;
-    color: black;
-    padding: 5px 0;
-}
-
-.dropdown {
-    opacity: 0%;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: left;
-}
-
 
 /* ------------PIANO-GAME-------------- */
 
+p {
+    text-align: center;
+}
 
 .piano-game {
     display: flex;
@@ -139,6 +86,7 @@ ol {
 .letras-canciones {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 500;
+    text-align: center;
 }
 
 /* ------------PIANO-INFO-------------- */

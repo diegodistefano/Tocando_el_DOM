@@ -92,9 +92,10 @@ main{
 /* CARTAS APRENDER */
 .aprender{
     display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: center;
     flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea cuando no hay espacio */
     gap: 30px; /* Añade espacio entre los elementos */
-    padding: 3% 3% 3% 5%; /* Añade espacio alrededor del contenedor */
+    padding: 3% 3% 10% 3%; /* Añade espacio alrededor del contenedor */
 }
 
 .container-aprender{
@@ -105,9 +106,8 @@ main{
 }
 
 .img-aprender {
-    width: 310px; /* Establece el ancho de la imagen */
-    height: 250px; /* Establece la altura de la imagen */
-    background-size: cover; /* Hace que la imagen cubra el contenedor */
+    width: 50%; /* Establece el ancho de la imagen */
+    object-fit: cover; /* Hace que la imagen cubra el contenedor */
     background-position: center; /* Centra la imagen dentro del contenedor */
     border-radius: 10px 0px 0px 10px; /* Redondea las esquinas de la imagen */
 }
