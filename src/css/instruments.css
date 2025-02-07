@@ -4,77 +4,19 @@
     box-sizing: border-box;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.div-container-titulo {
-    padding: 2rem 2rem 0rem 2rem;
-    font-size: 25px;
-}
-
-.div-container-titulo h2 {
-    font-size: 50px;
-    margin: 1rem 0rem;
-}
-
-.container-piano{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.notas-piano {
-    width: 80%;
-    height: 100%;
-    margin-top: 5%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-ol {
-    display: flex;
-    text-align: center;
-    list-style-type: none;
-}
-
-.nota {
-    background-color: azure;
-    border: solid black 1px;
-    border-radius: 0px 0px 5px 5px;
-    height: 200px;
-    width: 40px;
-}
-
-.nota-sos {
-    position: absolute;
-    background-color: rgb(45, 45, 45);
-    border: solid black 1px;
-    border-radius: 0px 0px 4px 4px;
-    height: 120px;
-    width: 28px;
-    margin-left: -14px;
-}
-
-.presionada {
-    background-color: #77dd77;
-}
-
-.mako-regular {
-    font-family: "Mako", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
 body {
     background-color: #FFF9E8;
     min-height: 100vh;
     font-family: 'Mako', sans-serif;
+}
+
+main {
+    min-height: 48vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 h1,
@@ -86,10 +28,6 @@ h6 {
     font-family: 'EB Garamond', serif;
 }
 
-p {
-    text-align: justify;
-}
-
 nav {
     display: flex;
     background-color: #9BBDF9;
@@ -99,10 +37,6 @@ nav {
     height: 5%;
     align-items: center;
     flex-wrap: wrap;
-}
-
-main {
-    min-height: 48vh;
 }
 
 .logo {
@@ -129,8 +63,125 @@ ul {
     text-align: left;
 }
 
+
+/* ------------PIANO-GAME-------------- */
+
+
+.piano-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-container-titulo {
+    padding: 2rem 2rem 0rem 2rem;
+    font-size: 25px;
+}
+
+.div-container-titulo h2 {
+    font-size: 50px;
+    margin: 1rem 0rem;
+}
+
+.container-piano{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notas-piano {
+    height: 100%;
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+ol {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.letra-tecla {
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.nota {
+    background-color: azure;
+    border: solid black 1px;
+    border-radius: 0px 0px 5px 5px;
+    height: 200px;
+    width: 35px;
+    color: black;
+}
+
+.nota-sos {
+    position: absolute;
+    background-color: rgb(45, 45, 45);
+    border: solid black 1px;
+    border-radius: 0px 0px 4px 4px;
+    height: 120px;
+    width: 20px;
+    margin-left: -14px;
+    color: white;
+}
+
+.presionada {
+    background-color: #77dd77;
+}
+
+.letras-canciones {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+/* ------------PIANO-INFO-------------- */
+
 .shadow {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 2.3);
+}
+
+.piano-info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 10% 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 30%;
+    width: 80%;
+    margin: 5% 0;
+    padding: 5% 0;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.box img {
+    width: 230px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
 footer {
@@ -171,7 +222,6 @@ a {
     color: black;
     text-decoration: none;
 }
-
 
 .copyright {
     width: 100%;
@@ -221,10 +271,10 @@ footer hr {
     .nota{
         background-color: rgba(172, 172, 197, 0.596);
         border: #9BBDF9;
+        color:  rgba(172, 172, 197, 0.596);
     }
     .container-piano {
         flex-wrap: wrap;
-        /* margin: 1rem; */
     }
     .container-piano::before {
         margin-top: 40px;
@@ -246,6 +296,19 @@ footer hr {
         width: 40px;
         margin-left: -20px;
     }
+    .boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
+    .box {
+        width: 40%;
+        margin: 2%;
+        margin-bottom: 5%;
+    }
+
 }
 
 @media (min-width: 1366px) {
@@ -262,6 +325,18 @@ footer hr {
         width: 60px;
         margin-left: -30px;
         border: solid black 2px;
+    }
+    .boxes {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .box {
+        width: 60%;
+        height: 250px;        
+        margin: 2%;
+        margin-bottom: 5%;
     }
 }
 
