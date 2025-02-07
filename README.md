@@ -12,6 +12,7 @@
 
 ## 🛠️ Tecnologías utilizadas  
 
+
 Para dar vida a esta increíble experiencia, usamos:  
 
 
@@ -29,21 +30,16 @@ Para dar vida a esta increíble experiencia, usamos:
 ___
 
 
-## 🎬 Vista previa  
-
-Aquí tienes una pequeña muestra de lo que encontrarás en Bootcamp Rock:  
-
-### 🖼️ Captura de pantalla
+### 🖼️ Una vista de nuestra web
 ![Vista previa de Bootcamp Rock](./public/img/BootcampRock.png)  
 
-### 🎞️ GIF en acción
-![Bootcamp Rock en acción](./public/img/gif-gatito.gif)  
+### 🎞️ ¡Nuestro Bamba rockeando en el piano de la web!
 
-*(Para añadir imágenes o GIFs, súbelos a la carpeta del proyecto y coloca la ruta correcta en lugar de "ruta-de-tu-imagen.png" o "ruta-de-tu-gif.gif".)*  
+![Bootcamp Rock en acción](./public/img/gif-gatito.gif)  
 
 ---
 
-## 🏁 Cómo instalar y ejecutar  
+## 🏁 ¿Quieres robar nuestro código? Róbalo tranquilo. Hasta te damos los pasos: 
 
 1. 📥 Clona el repositorio:  
    ```bash
@@ -59,10 +55,10 @@ Aquí tienes una pequeña muestra de lo que encontrarás en Bootcamp Rock:
 ## 👥 Nuestro equipo  
 
 Este proyecto fue desarrollado con mucho ritmo por:  
-- 🎸 **Rubén** - Maestro de la guitarra y el código  
-- 🎤 **José** - El vocalista del frontend  
-- 🥁 **Diego** - Baterista del backend  
-- 🎹 **Saray** - Pianista del diseño UI/UX  
+- 🎸 **Rubén** - Maestro de la guitarra y el código    [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://www.linkedin.com/in/rubenortegagonzalez/)
+- 🎤 **José** - El vocalista del frontend    [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://www.linkedin.com/in/jose-manuel-barreiro-álvarez/)  
+- 🥁 **Diego** - Baterista del backend    [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://www.linkedin.com/in/diegodistefano/)
+- 🎹 **Saray** - Pianista del diseño UI/UX    [![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin)](https://www.linkedin.com/in/saray-miguel-narganes/)  
 
 👨‍💻👩‍💻 ¡Gracias por hacer de Bootcamp Rock una realidad! 🤘
 
@@ -77,5 +73,7 @@ Este proyecto está bajo la licencia **ROBE TRANQUIL@**. ¡Úsalo, mejóralo y c
 ## 📢 ¡Síguenos y colabora!  
 
 Si te gusta este proyecto, dale ⭐ en GitHub y únete a nuestra comunidad. ¡Aceptamos sugerencias, mejoras y colaboraciones!  
+
+Aceptamos Patreon, Bizum, y PayPal.
 
 ¡Nos vemos en el escenario digital! 🎤🔥
