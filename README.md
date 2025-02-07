@@ -34,10 +34,10 @@ ___
 Aquí tienes una pequeña muestra de lo que encontrarás en Bootcamp Rock:  
 
 ### 🖼️ Captura de pantalla
-![Vista previa de Bootcamp Rock](ruta-de-tu-imagen.png)  
+![Vista previa de Bootcamp Rock](./public/img/BootcampRock.png)  
 
 ### 🎞️ GIF en acción
-![Bootcamp Rock en acción](ruta-de-tu-gif.gif)  
+![Bootcamp Rock en acción](./public/img/gif-gatito.gif)  
 
 *(Para añadir imágenes o GIFs, súbelos a la carpeta del proyecto y coloca la ruta correcta en lugar de "ruta-de-tu-imagen.png" o "ruta-de-tu-gif.gif".)*  
 
