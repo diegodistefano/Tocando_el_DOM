@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BootCamp Rock</title>
-        <link rel="stylesheet" href="./../src/css/style.css">
-        <link rel="stylesheet" href="./../src/css/contact.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mako&display=swap" rel="stylesheet">   
-        
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootCamp Rock</title>
+    <link rel="stylesheet" href="./../src/css/style.css">
+    <link rel="stylesheet" href="./../src/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mako&display=swap" rel="stylesheet">
+
+</head>
 
 <body>
     <nav class="shadow">
@@ -60,71 +61,74 @@
         </div>
     </nav>
 
-    <main>                
-        
-            <h1 class="mover-contactanos">Contáctanos</h1>    
-            <br>
-            <div class="contenedor-elementos-formulario">
-    
-                          
-                <form>    
-                    
-                    <label  for="nombre">Nombre</label>
-                    <!-- <br> -->
-                    <input id="nombre" type="text" name="nombre"/>
-                    <small id="mensaje-nombre" style="color: blue; font-weight: bold; display: none;"></small> <!-- Mensaje informativo --> <!-- Mensaje de error -->
-                    <br>
-                    <br>
-                    <label for="apellidos">Apellidos</label>
-                    <br>
-                    <input id="apellidos" type="text" name="apellidos"/>
-                    <br>
-                    <br>
-                    
-                    <label for="e-mail-contacto">E-mail de Contacto</label>             <small id="mensaje-email" style="color: blue; font-weight: bold; display: none;"></small> <!-- Mensaje de error arriba -->      
-                    
-                    <input type="e-mail"  name="e-mail-contacto"/>
-                    <br><br>
-                    
-                    <label for="telefono">Teléfono</label>             <br>
-                    
-                    <input type="text" id="telefono" name="telefono" maxlength="9"/>
-                    
-                    <small id="mensaje-info" style="color: blue; font-weight: bold; display: none;"></small> <!-- Mensaje informativo -->
-                    <small id="mensaje-error" style="color: red; display: none;"></small> <!-- Mensaje de error -->
-                    
-                    <br><br>
-    
-                    <label for="instrumentos">Instrumentos</label>
-                    <br>
-                    <select>
-                        <option value="" disabled selected>Seleccione un Instrumento</option>
-                        <option value="bateria">Batería</option>
-                         <option value="flauta">Flauta</option>       
-                        <option value="guitarra">Guitarra</option> 
-                        <option value="piano">Piano</option>       
-                    </select>
-                                                   
-                    <br>
-                    <br>
-                    <label for="comentarios">Comentarios</label>
-    
-                    <br>
-    
-                    <textarea class="comentarios" cols="15" rows="10" id="comentarios" name="comentarios">
-                    </textarea>          
-    
-                    <br><br>
-    
-                    <div class="centrar-boton">
-                         <button class="fondo-boton">Enviar</button>
-                    </div>
-    
-                </form>
-                    
-            </div>                   
-    
-        
+    <main>
+
+        <h1 class="mover-contactanos">Contáctanos</h1>
+        <br>
+        <div class="contenedor-elementos-formulario">
+
+
+            <form>
+
+                <label for="nombre">Nombre</label>
+                <!-- <br> -->
+                <input id="nombre" type="text" name="nombre" />
+                <small id="mensaje-nombre" style="color: blue; font-weight: bold; display: none;"></small>
+                <!-- Mensaje informativo --> <!-- Mensaje de error -->
+                <br>
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <br>
+                <input id="apellidos" type="text" name="apellidos" />
+                <br>
+                <br>
+
+                <label for="e-mail-contacto">E-mail de Contacto</label> <small id="mensaje-email"
+                    style="color: blue; font-weight: bold; display: none;"></small> <!-- Mensaje de error arriba -->
+
+                <input type="e-mail" name="e-mail-contacto" />
+                <br><br>
+
+                <label for="telefono">Teléfono</label> <br>
+
+                <input type="text" id="telefono" name="telefono" maxlength="9" />
+
+                <small id="mensaje-info" style="color: blue; font-weight: bold; display: none;"></small>
+                <!-- Mensaje informativo -->
+                <small id="mensaje-error" style="color: red; display: none;"></small> <!-- Mensaje de error -->
+
+                <br><br>
+
+                <label for="instrumentos">Instrumentos</label>
+                <br>
+                <select>
+                    <option value="" disabled selected>Seleccione un Instrumento</option>
+                    <option value="bateria">Batería</option>
+                    <option value="flauta">Flauta</option>
+                    <option value="guitarra">Guitarra</option>
+                    <option value="piano">Piano</option>
+                </select>
+
+                <br>
+                <br>
+                <label for="comentarios">Comentarios</label>
+
+                <br>
+
+                <textarea class="comentarios" cols="15" rows="10" id="comentarios" name="comentarios">
+                    </textarea>
+
+                <br><br>
+
+                <div class="centrar-boton">
+                    <button class="fondo-boton">Enviar</button>
+                </div>
+
+            </form>
+
+        </div>
+
+
     </main>
 
     <!-- Footer -->
@@ -154,9 +158,7 @@
 
     <script src="./../src/js/toogle.js"></script>
     <script src="./../src/js/contact.js"></script> <!-- Validar el Formulario -->
-    
+
 </body>
 
 </html>
-
-

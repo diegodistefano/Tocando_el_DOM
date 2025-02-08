@@ -45,7 +45,7 @@ document.addEventListener("click", function (e) {
         return;
     } else {
         e.target.classList.toggle("dark");
-        let audio = new Audio("./../../public/sound/drums/" + drums_pieces[e.target.id].audio);
+        let audio = new Audio("./../public/sound/drums/" + drums_pieces[e.target.id].audio);
         audio.play();
         setTimeout(() => {
             e.target.classList.toggle("dark");
