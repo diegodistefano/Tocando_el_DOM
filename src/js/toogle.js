@@ -1,11 +1,16 @@
 let buttonToggle = document.querySelector('.icon-toogle');
 let menu = document.querySelector('.toogle');
+let root = './';
+if (buttonToggle.getAttribute('src').includes('./../')) {
+    root = './../';
+}
+
 buttonToggle.addEventListener('click', function () {
-    if (buttonToggle.getAttribute('src') == './../public/img/toogle.svg') {
-        buttonToggle.setAttribute('src', './../../public/img/close.svg');
+    if (buttonToggle.getAttribute('src') == root + 'public/img/toogle.svg') {
+        buttonToggle.setAttribute('src', (root + 'public/img/close.svg'));
         menu.setAttribute('class', 'toogle toogle-active');
     } else {
-        buttonToggle.setAttribute('src', './../public/img/toogle.svg');
+        buttonToggle.setAttribute('src', (root + 'public/img/toogle.svg'));
         menu.setAttribute('class', 'toogle');
     }
 })
