@@ -28,6 +28,8 @@ Para dar vida a esta increíble experiencia, usamos:
 <img height="50" src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"><img height="50" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png">  → Para ordenar todo el trabajo en equipo (lo más importante)  </br>
 
 ___
+### 👀 Echa un ojo al Figma de Bootcamp Rock ⤵️
+[Proyecto Figma](https://www.figma.com/design/L7S4PGTmSc6M8rhxi1Mt04/Bootcamp-Rock?node-id=112-20&t=9BXjY8GYlvG1102e-1)
 
 
 ### 🖼️ Una vista de nuestra web
