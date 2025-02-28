@@ -18,6 +18,8 @@ nombreInput.addEventListener("mouseover", function() {
     }
 });
 
+
+
 // Evento input para ocultar el mensaje cuando el usuario empiece a escribir
 nombreInput.addEventListener("input", function() {
     mensajeNombre.style.display = "none"; // Ocultar mensaje si el usuario escribe
